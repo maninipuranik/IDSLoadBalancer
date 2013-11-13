@@ -1,0 +1,6 @@
+2013-11-06 19:24:37 DEBUG openFilesLogger:15 - *************************Starting openFilesLogger************************
+2013-11-06 19:24:38 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-11-06 19:24:38 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-11-06 19:24:38 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-11-06 19:24:38 DEBUG openFilesLogger:15 - All Servers ->[]
+2013-11-06 19:24:38 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************

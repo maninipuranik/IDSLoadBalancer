@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<indesignServerInstanceList>
+    <indesignServerInstance>
+        <url>http://localhost:18385</url>
+    </indesignServerInstance>
+    <indesignServerInstance>
+        <url>http://localhost:18386</url>
+    </indesignServerInstance>
+    <indesignServerInstance>
+        <url>http://localhost:18387</url>
+    </indesignServerInstance>
+</indesignServerInstanceList>
