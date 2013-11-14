@@ -49,12 +49,13 @@ public class DefaultInDesignLoadBalancerImpl
 		openFilesLogger.debug("*************************Starting openFilesLogger************************");
 		allServerList = InDesignServerListLoader.unmarshal(new File(serverListXmlPath));
 		setErrorResponses();
-		testAndUpdateTheStatusOfAllINDS();
+		performTimedActivity();
 	}
 	
-	public void testAndUpdateTheStatusOfAllINDS() {
+	public void performTimedActivity() {
 		
 		//TODO need to configure paths as per the load balancer configuration
+		System.out.println("DefaultInDesignLoadBalancerImpl.performTimedActivity() Starts");
 		String pingRequest = null;
 		try {
 			pingRequest = FileUtils.readFileToString(new File("res/requests/pingRequest.xml"), "UTF-8");
@@ -92,7 +93,7 @@ public class DefaultInDesignLoadBalancerImpl
 				//TODO inspect the response to check if plugins are installed!!!
 			}
 		}
-		
+		System.out.println("DefaultInDesignLoadBalancerImpl.performTimedActivity() Ends");
 		isAnyINDSIsAlive();
 		checkINDSOpenFileListSanity();
 	}

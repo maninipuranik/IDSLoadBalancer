@@ -1,6 +1,8 @@
 package com.cs.loadbalancer.indesign;
 
 import com.cs.loadbalancer.indesign.utils.http.MultiThreadedHTTPServer;
+import com.cs.loadbalancer.indesign.utils.scheduler.TimeQuantumTimer;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author manini
@@ -12,12 +14,14 @@ public class MainClass {
 	static int port = 8082;
 	static int threadPoolSize = 10;
 	static MultiThreadedHTTPServer multiThreadedHTTPServer;
+	static TimeQuantumTimer timeQuantumTimer;
 
 	public static void main(String[] args) {
 
 		try {
 			setProcessArguments(args);
 			InDesignLoadBalancer inDesignLoadBalancer = new DefaultInDesignLoadBalancerImpl();
+			timeQuantumTimer = new TimeQuantumTimer(60000, TimeUnit.MILLISECONDS, inDesignLoadBalancer);
 			multiThreadedHTTPServer = new MultiThreadedHTTPServer(hostName, port, threadPoolSize, inDesignLoadBalancer);
 			multiThreadedHTTPServer.startServer();
 		} catch (Throwable e) {
