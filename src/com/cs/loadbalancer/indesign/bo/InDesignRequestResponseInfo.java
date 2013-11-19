@@ -30,15 +30,19 @@ import com.cs.loadbalancer.indesign.helpers.DefaultLoggerImpl;
  */
 public class InDesignRequestResponseInfo implements Serializable {
 	
-	private static DefaultLoggerImpl requestLogger = new DefaultLoggerImpl(InDesignRequestResponseInfo.class.getName());
-	private static String logSeparator = "###???###";
+	private static DefaultLoggerImpl requestLogger = new DefaultLoggerImpl("requestLogger");
+	private static DefaultLoggerImpl pingLogger = new DefaultLoggerImpl("pingLogger");
+	private static String logSeparator = ";";
 	private static final long serialVersionUID = 1L;
+	private static int requestCounter;
 
 	//often used fields
+	protected int requestID;
 	protected String mamFileID;
 	protected boolean isFileRequest;
 	protected InDesignServerInstance inDesignServerInstance;
 	protected boolean isNewServerAssigned;
+	protected boolean isPingRequest;
 	
 	//fields for logging
 	protected String clientIP;
@@ -61,6 +65,7 @@ public class InDesignRequestResponseInfo implements Serializable {
 	}
 	
 	public void receivedFromWebServer(String requestData) {
+		requestID = ++requestCounter;
 		status = InDesignRequestResponseStatus.RECEIVED_FROM_WEBSERVER;
 		this.requestData = requestData;
 		Document requestDocument;
@@ -70,19 +75,20 @@ public class InDesignRequestResponseInfo implements Serializable {
 		} catch (Throwable e) {
 			// TODO Eat up the exception
 		}
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 	
 	public void pingFromLoadBalancer(String requestData) {
-		status = InDesignRequestResponseStatus.PING_FROM_WEBSERVER;
+		isPingRequest = true;
+		status = InDesignRequestResponseStatus.PING_FROM_LOADBALANCER;
 		this.requestData = requestData;
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 	
 	public void waitingForINDS() {
 		status = InDesignRequestResponseStatus.WAITING_FOR_INDS;
 		inDesignServerInstance = null;
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 	
 	public void gotINDS(InDesignServerInstance inDesignServerInstance, boolean isNewServerAssigned) {
@@ -93,18 +99,18 @@ public class InDesignRequestResponseInfo implements Serializable {
 		if(isFileRequest) {
 			inDesignServerInstance.openFileList.add(mamFileID);
 		}
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 	
 	public void sendingToINDS() {
 		status = InDesignRequestResponseStatus.SENDING_TO_INDS;
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 	
 	public void receivedFromINDS(String responseData) {
 		status = InDesignRequestResponseStatus.RECEIVED_FROM_INDS;
 		this.responseData = responseData;
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 	
 	public void processNormalResponseFromINDS() {
@@ -112,17 +118,17 @@ public class InDesignRequestResponseInfo implements Serializable {
 		try {
 			checkErrorOrFaultInResponse(responseData);
 			status = InDesignRequestResponseStatus.SUCCESS_FROM_INDS;
-			requestLogger.debug(toStringInstance());
+			log(toStringInstance());
 		} 
 		catch (FaultReceivedFromINDS e) {
 			status = InDesignRequestResponseStatus.FAULT_FROM_INDS;
 			errorMessage = e.getMessage();
-			requestLogger.debug(toStringInstance());
+			log(toStringInstance());
 		} 
 		catch (ErrorReceivedFromINDS e) {
 			status = InDesignRequestResponseStatus.ERROR_FROM_INDS;
 			errorMessage = e.getMessage();
-			requestLogger.debug(toStringInstance());
+			log(toStringInstance());
 		}
 	}
 	
@@ -136,7 +142,7 @@ public class InDesignRequestResponseInfo implements Serializable {
 			if(openFilesFromResponse!=null) {
 				
 				if(openFilesFromResponse.size()==0) {
-					requestLogger.debug("The response ->" + responseData);
+					log("The response ->" + responseData);
 				}
 				
 				LinkedHashSet<String> extraFiles = new LinkedHashSet<String>();
@@ -151,17 +157,17 @@ public class InDesignRequestResponseInfo implements Serializable {
 				inDesignServerInstance.openFileList = openFilesFromResponse;
 			}
 			status = InDesignRequestResponseStatus.SUCCESS_FROM_INDS;
-			requestLogger.debug(toStringInstance());
+			log(toStringInstance());
 		} 
 		catch (FaultReceivedFromINDS e) {
 			status = InDesignRequestResponseStatus.FAULT_FROM_INDS;
 			errorMessage = e.getMessage();
-			requestLogger.debug(toStringInstance());
+			log(toStringInstance());
 		} 
 		catch (ErrorReceivedFromINDS e) {
 			status = InDesignRequestResponseStatus.ERROR_FROM_INDS;
 			errorMessage = e.getMessage();
-			requestLogger.debug(toStringInstance());
+			log(toStringInstance());
 		}
 	}
 	
@@ -169,25 +175,34 @@ public class InDesignRequestResponseInfo implements Serializable {
 		if(isFileRequest) {
 			inDesignServerInstance.openFileList.remove(mamFileID);
 		}
-		status = InDesignRequestResponseStatus.ERROR_SENDING_TO_INDS;
+		status = InDesignRequestResponseStatus.ERROR_SENDING_TO_INDS_GETTING_NEW_INDS;
 		errorMessage = message;
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
+	}
+	
+	public void processErrorInRequestProcessing(String message) {
+		if(isFileRequest) {
+			inDesignServerInstance.openFileList.remove(mamFileID);
+		}
+		status = InDesignRequestResponseStatus.ERROR_IN_REQUEST_PROCESSING;
+		errorMessage = message;
+		log(toStringInstance());
 	}
 	
 	public void noINDSAvailableSendingErrorToWebserver() {
 		status = InDesignRequestResponseStatus.NO_INDS_AVAILABLE_SENDING_ERROR_TO_WEBSERVER;
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 	
 	public void processINDSBusyResponseFromINDS(String message) {
 		status = InDesignRequestResponseStatus.SERVER_BUSY;
 		errorMessage = message;
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 	
 	public void sendingToWebserver() {
 		status = InDesignRequestResponseStatus.SENT_TO_WEBSERVER;
-		requestLogger.debug(toStringInstance());
+		log(toStringInstance());
 	}
 
 	/**
@@ -226,12 +241,29 @@ public class InDesignRequestResponseInfo implements Serializable {
 	public String getResponseData() {
 		return responseData;
 	}
+	
+	/**
+	 * @return the isNewServerAssigned
+	 */
+	public boolean isNewServerAssigned() {
+		return isNewServerAssigned;
+	}
 
 	/**
 	 * @return the openFilesFromResponse
 	 */
 	public LinkedHashSet<String> getOpenFilesFromResponse() {
 		return openFilesFromResponse;
+	}
+	
+	protected void log(String log) {
+		
+		if(isPingRequest) {
+			pingLogger.debug(log);
+		}
+		else {
+			requestLogger.debug(log);
+		}
 	}
 
 	protected void getInfoFromRequest(Document document) {
@@ -314,40 +346,6 @@ public class InDesignRequestResponseInfo implements Serializable {
 	}
 	
 	
-	
-	protected String toStringInstance() {
-		StringBuilder builder = new StringBuilder();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
-		builder.append(sdf.format(new Date(System.currentTimeMillis())));
-		builder.append(logSeparator);
-		builder.append(Thread.currentThread().getName());
-		builder.append(logSeparator);
-		builder.append(mamFileID);
-		builder.append(logSeparator);
-		builder.append(inDesignServerInstance);
-		builder.append(logSeparator);
-		builder.append(isNewServerAssigned);
-		builder.append(logSeparator);
-		builder.append(clientIP);
-		builder.append(logSeparator);
-		builder.append(sessionContext);
-		builder.append(logSeparator);
-		builder.append(userId);
-		builder.append(logSeparator);
-		builder.append(processID);
-		builder.append(logSeparator);
-		builder.append(documentLocked);
-		builder.append(logSeparator);
-		/*builder.append(requestData);
-		builder.append(logSeparator);
-		builder.append(responseData);
-		builder.append(logSeparator);*/
-		builder.append(openFilesFromResponse);
-		builder.append(logSeparator);
-		builder.append(status);
-		return builder.toString();
-	}
-
 	public static void main(String[] args) throws Throwable {
 
 		testRequest();
@@ -449,8 +447,7 @@ public class InDesignRequestResponseInfo implements Serializable {
 	protected static void testRequest() throws Throwable {
 
 		String request = getFileDataAsString("res/soap-request.xml");
-		System.out.println("InDesignRequestResponseInfo.testRequest() ->"
-				+ request);
+		System.out.println("InDesignRequestResponseInfo.testRequest() ->" + request);
 	}
 
 	protected static String getFileDataAsString(String fileName)
@@ -473,20 +470,22 @@ public class InDesignRequestResponseInfo implements Serializable {
 		builder.append(logSeparator);
 		builder.append("thread");
 		builder.append(logSeparator);
+		builder.append("requestID");
+		builder.append(logSeparator);
 		builder.append("mamFileID");
 		builder.append(logSeparator);
 		builder.append("inDesignServerInstance");
+		//builder.append(logSeparator);
+		//builder.append("isNewServerAssigned");
 		builder.append(logSeparator);
-		builder.append("isNewServerAssigned");
-		builder.append(logSeparator);
-		builder.append("clientIP");
-		builder.append(logSeparator);
+		//builder.append("clientIP");
+		//builder.append(logSeparator);
 		builder.append("sessionContext");
 		builder.append(logSeparator);
-		builder.append("userId");
+		/*builder.append("userId");
 		builder.append(logSeparator);
 		builder.append("processID");
-		builder.append(logSeparator);
+		builder.append(logSeparator);*/
 		builder.append("documentLocked");
 		builder.append("logSeparator");
 		/*builder.append("requestData");
@@ -498,15 +497,41 @@ public class InDesignRequestResponseInfo implements Serializable {
 		builder.append("status");
 		return builder.toString();
 	}
-
-	/**
-	 * @return the isNewServerAssigned
-	 */
-	public boolean isNewServerAssigned() {
-		return isNewServerAssigned;
+	
+	protected String toStringInstance() {
+		StringBuilder builder = new StringBuilder();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+		builder.append(sdf.format(new Date(System.currentTimeMillis())));
+		builder.append(logSeparator);
+		builder.append(Thread.currentThread().getName());
+		builder.append(logSeparator);
+		builder.append("!!!!"+requestID+"!!!!");
+		builder.append(logSeparator);
+		builder.append(mamFileID);
+		builder.append(logSeparator);
+		builder.append(inDesignServerInstance);
+		//builder.append(logSeparator);
+		//builder.append(isNewServerAssigned);
+		builder.append(logSeparator);
+		//builder.append(clientIP);
+		//builder.append(logSeparator);
+		builder.append(sessionContext);
+		builder.append(logSeparator);
+		//builder.append(userId);
+		//builder.append(logSeparator);
+		//builder.append(processID);
+		//builder.append(logSeparator);
+		builder.append(documentLocked);
+		builder.append(logSeparator);
+		/*builder.append(requestData);
+		builder.append(logSeparator);
+		builder.append(responseData);
+		builder.append(logSeparator);*/
+		builder.append(openFilesFromResponse);
+		builder.append(logSeparator);
+		builder.append(status);
+		return builder.toString();
 	}
-
-
 
 
 }

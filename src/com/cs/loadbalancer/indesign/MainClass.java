@@ -21,7 +21,8 @@ public class MainClass {
 		try {
 			setProcessArguments(args);
 			InDesignLoadBalancer inDesignLoadBalancer = new DefaultInDesignLoadBalancerImpl();
-			timeQuantumTimer = new TimeQuantumTimer(60000, TimeUnit.MILLISECONDS, inDesignLoadBalancer);
+			timeQuantumTimer = new TimeQuantumTimer(5000, TimeUnit.MILLISECONDS, inDesignLoadBalancer);
+			timeQuantumTimer.start();
 			multiThreadedHTTPServer = new MultiThreadedHTTPServer(hostName, port, threadPoolSize, inDesignLoadBalancer);
 			multiThreadedHTTPServer.startServer();
 		} catch (Throwable e) {

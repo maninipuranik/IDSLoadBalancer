@@ -30,6 +30,7 @@ public class DefaultInDesignLoadBalancerImpl
 	private static DefaultLoggerImpl loadBalancerLogger = new DefaultLoggerImpl("loadBalancerLogger");
 	private static DefaultLoggerImpl idlkLogger = new DefaultLoggerImpl("idlkLogger");
 	private static DefaultLoggerImpl openFilesLogger = new DefaultLoggerImpl("openFilesLogger");
+	private static DefaultLoggerImpl indsAliveLogger = new DefaultLoggerImpl("indsAliveLogger");
 	
 	private static String serverListXmlPath = "res/indesignservers.xml";
 	
@@ -55,7 +56,6 @@ public class DefaultInDesignLoadBalancerImpl
 	public void performTimedActivity() {
 		
 		//TODO need to configure paths as per the load balancer configuration
-		System.out.println("DefaultInDesignLoadBalancerImpl.performTimedActivity() Starts");
 		String pingRequest = null;
 		try {
 			pingRequest = FileUtils.readFileToString(new File("res/requests/pingRequest.xml"), "UTF-8");
@@ -81,19 +81,18 @@ public class DefaultInDesignLoadBalancerImpl
 					sendRequestToInDesignServer(inDesignRequestResponseInfo);
 					inDesignRequestResponseInfo.processFileResponseFromINDS();
 					
-					// Note : this particular call addThisINDSToFreeServerList goes to a synchronized method
-					addThisINDSToFreeServerList(inDesignServerInstance);
+					// Note : this particular call freeUpAssignedINDS goes to a synchronized method
+					freeUpAssignedINDS(inDesignServerInstance);
 				} 
 				catch (Throwable e) {
-					
-					//TODO Dont reset the open file list even if the server is down keep this server in the retry list
+					// Dont reset the open file list even if the server is down keep this server in the retry list
+					indsAliveLogger.error("DefaultInDesignLoadBalancerImpl.performTimedActivity()->"+ e.getMessage());
 					loadBalancerLogger.error(e);
 					loadBalancerLogger.debug("Server, " + inDesignServerInstance.url + " unavailable, hence marking it for retry");
 				}
 				//TODO inspect the response to check if plugins are installed!!!
 			}
 		}
-		System.out.println("DefaultInDesignLoadBalancerImpl.performTimedActivity() Ends");
 		isAnyINDSIsAlive();
 		checkINDSOpenFileListSanity();
 	}
@@ -147,19 +146,25 @@ public class DefaultInDesignLoadBalancerImpl
 			} 
 			catch (Throwable e) {
 				
+				indsAliveLogger.error("DefaultInDesignLoadBalancerImpl.processSimpleXMLRequest()->"+ e.getMessage());
+				loadBalancerLogger.error(e);
 				if(e instanceof ResponseTimeoutException) {
-					
+					// Dont reset the open file list even if the server is down keep this server in the retry list
 					dontFreeUpAndProcessINDSBusyResponseFromINDS(inDesignRequestResponseInfo, e.getMessage());
 					return errorResponseWhenINDSBusy;
 				}
-				else if(inDesignRequestResponseInfo.isNewServerAssigned()) {
-					
-					freeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
+				else if (e instanceof ConnectionException && inDesignRequestResponseInfo.isNewServerAssigned()) {
+					//internally free up this file from open file list
+					dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
 					//making a recursive call until...
+					try {
+						Thread.sleep(30000);
+					} catch (InterruptedException e1) {
+					}
 					processSimpleXMLRequest(inDesignRequestResponseInfo);
 				} 
 				else {
-					
+					freeUpAndProcessErrorInRequestProcessing(inDesignRequestResponseInfo, e.getMessage());
 					return errorResponseWhenRequestResponseCouldNotBeProcessed;
 				}
 			} 
@@ -167,6 +172,7 @@ public class DefaultInDesignLoadBalancerImpl
 			return inDesignRequestResponseInfo.getResponseData();
 		}
 		else {
+			inDesignRequestResponseInfo.noINDSAvailableSendingErrorToWebserver();
 			return errorResponseWhenNoINDSIsAvailable;
 		}
 	}
@@ -306,17 +312,24 @@ public class DefaultInDesignLoadBalancerImpl
 		freeUpAssignedINDS(inDesignRequestResponseInfo.getInDesignServerInstance());
 	}
 	
+	protected synchronized void freeUpAndProcessErrorInRequestProcessing(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
+		
+		inDesignRequestResponseInfo.processErrorInRequestProcessing(errorMessage);
+		freeUpAssignedINDS(inDesignRequestResponseInfo.getInDesignServerInstance());
+	}
+	
 	protected synchronized void dontFreeUpAndProcessINDSBusyResponseFromINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
 		
 		inDesignRequestResponseInfo.processINDSBusyResponseFromINDS(errorMessage);
 		addThisINDSToOccupiedServerListWithStatusRetry(inDesignRequestResponseInfo.getInDesignServerInstance());
 	}
 	
-	protected synchronized void freeUpAndProcessErrorSendingRequestToINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
+	protected synchronized void dontFreeUpAndProcessErrorSendingRequestToINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
 		
 		inDesignRequestResponseInfo.processErrorSendingRequestToINDSGettingNewINDS(errorMessage);
-		freeUpAssignedINDS(inDesignRequestResponseInfo.getInDesignServerInstance());
+		addThisINDSToOccupiedServerListWithStatusRetry(inDesignRequestResponseInfo.getInDesignServerInstance());
 	}
+	
 	
 	protected synchronized void freeUpAssignedINDS(InDesignServerInstance inDesignServerInstance) {
 		
@@ -439,7 +452,7 @@ public class DefaultInDesignLoadBalancerImpl
 		openFilesLogger.debug("*************************Starting checkINDSOpenFileListSanity************************");
 		openFilesLogger.debug("Free Servers ->" + freeServerList.toString());
 		openFilesLogger.debug("Occupied Servers ->" + occupiedInDesignServersList.toString());
-		openFilesLogger.debug("All Servers ->" + occupiedInDesignServersList.toString());
+		openFilesLogger.debug("All Servers ->" + allServerList.toString());
 		openFilesLogger.debug("*************************Starting checkINDSOpenFileListSanity************************");
 		Iterator<InDesignServerInstance> iterator1 = allServerList.iterator();
 		while(iterator1.hasNext()) {

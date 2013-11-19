@@ -18,5 +18,9 @@ public class DefaultLoggerImpl {
 	public void error(Throwable throwable) {
 		debugLogger.error(throwable);
 	}
+	
+	public void error(String log) {
+		debugLogger.error(log);
+	}
 
 }

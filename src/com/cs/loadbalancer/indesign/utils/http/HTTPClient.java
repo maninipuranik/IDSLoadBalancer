@@ -6,6 +6,7 @@ import java.net.SocketTimeoutException;
 import org.apache.http.HttpEntity;
 import org.apache.http.NoHttpResponseException;
 import org.apache.http.client.config.RequestConfig;
+import org.apache.http.client.config.RequestConfig.Builder;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.conn.ConnectTimeoutException;
@@ -25,7 +26,11 @@ public class HTTPClient {
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		try {
 			
-			RequestConfig requestConfig = RequestConfig.custom().setConnectTimeout(60 * 1000).build();
+			Builder builder = RequestConfig.custom();
+			builder.setConnectTimeout(5000);
+			builder.setSocketTimeout(5000);
+			RequestConfig requestConfig = builder.build();
+			
 			HttpPost httppost = new HttpPost(strURL);
 			httppost.setConfig(requestConfig);
 
