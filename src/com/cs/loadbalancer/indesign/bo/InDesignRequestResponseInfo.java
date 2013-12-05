@@ -1,6 +1,8 @@
 package com.cs.loadbalancer.indesign.bo;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.Serializable;
 import java.io.StringReader;
 import java.text.SimpleDateFormat;
@@ -14,6 +16,7 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -59,6 +62,10 @@ public class InDesignRequestResponseInfo implements Serializable {
 	protected LinkedHashSet<String> openFilesFromResponse;
 	protected InDesignRequestResponseStatus status = InDesignRequestResponseStatus.RECEIVED_FROM_WEBSERVER;
 	
+	protected String errorResponseWhenNoINDSIsAvailable = "";
+	protected String errorResponseWhenRequestResponseCouldNotBeProcessed = "";
+	protected String errorResponseWhenINDSBusy = "";
+	
 	
 	static {
 		requestLogger.debug(toStringStatic());
@@ -91,15 +98,23 @@ public class InDesignRequestResponseInfo implements Serializable {
 		log(toStringInstance());
 	}
 	
+	public void notifiedForINDS() {
+		status = InDesignRequestResponseStatus.NOTIFIED_FOR_INDS;
+		log(toStringInstance());
+	}
+	
+	
 	public void gotINDS(InDesignServerInstance inDesignServerInstance, boolean isNewServerAssigned) {
 		status = InDesignRequestResponseStatus.GOT_INDS;
 		this.inDesignServerInstance = inDesignServerInstance;
 		this.isNewServerAssigned = isNewServerAssigned;
+		inDesignServerInstance.inOccupiedMode(mamFileID);
 		
 		if(isFileRequest) {
 			inDesignServerInstance.openFileList.add(mamFileID);
 		}
 		log(toStringInstance());
+		
 	}
 	
 	public void sendingToINDS() {
@@ -113,71 +128,56 @@ public class InDesignRequestResponseInfo implements Serializable {
 		log(toStringInstance());
 	}
 	
-	public void processNormalResponseFromINDS() {
-		
-		try {
-			checkErrorOrFaultInResponse(responseData);
-			status = InDesignRequestResponseStatus.SUCCESS_FROM_INDS;
-			log(toStringInstance());
-		} 
-		catch (FaultReceivedFromINDS e) {
-			status = InDesignRequestResponseStatus.FAULT_FROM_INDS;
-			errorMessage = e.getMessage();
-			log(toStringInstance());
-		} 
-		catch (ErrorReceivedFromINDS e) {
-			status = InDesignRequestResponseStatus.ERROR_FROM_INDS;
-			errorMessage = e.getMessage();
-			log(toStringInstance());
-		}
-	}
-	
-	public void processFileResponseFromINDS() {
+	public void processResponseFromINDS() {
 
 		try {
 			checkErrorOrFaultInResponse(responseData);
 			
-			openFilesFromResponse = getOpenFilesFromResponse(responseData);
+			if(isFileRequest) {
 			
-			if(openFilesFromResponse!=null) {
-				
-				if(openFilesFromResponse.size()==0) {
-					log("The response ->" + responseData);
-				}
-				
-				LinkedHashSet<String> extraFiles = new LinkedHashSet<String>();
-				extraFiles.addAll(openFilesFromResponse);
-				extraFiles.removeAll(inDesignServerInstance.openFileList);
-				if(extraFiles.size()>0) {
+				openFilesFromResponse = getOpenFilesFromResponse(responseData);
+				if(openFilesFromResponse!=null) {
 					
-					errorMessage = "The server, " + inDesignServerInstance.url + ", has the open files ->" + openFilesFromResponse;
-					errorMessage += " And the load balancer has the open files " + inDesignServerInstance.url + "->" + inDesignServerInstance.openFileList.toString();
+					if(openFilesFromResponse.size()==0) {
+						log("The response ->" + responseData);
+					}
+					
+					LinkedHashSet<String> extraFiles = new LinkedHashSet<String>();
+					extraFiles.addAll(openFilesFromResponse);
+					extraFiles.removeAll(inDesignServerInstance.openFileList);
+					if(extraFiles.size()>0) {
+						
+						errorMessage = "The server, " + inDesignServerInstance.url + ", has the open files ->" + openFilesFromResponse;
+						errorMessage += " And the load balancer has the open files " + inDesignServerInstance.url + "->" + inDesignServerInstance.openFileList.toString();
+					}
+					
+					inDesignServerInstance.openFileList = openFilesFromResponse;
 				}
-				
-				inDesignServerInstance.openFileList = openFilesFromResponse;
 			}
 			status = InDesignRequestResponseStatus.SUCCESS_FROM_INDS;
-			log(toStringInstance());
 		} 
 		catch (FaultReceivedFromINDS e) {
 			status = InDesignRequestResponseStatus.FAULT_FROM_INDS;
 			errorMessage = e.getMessage();
-			log(toStringInstance());
 		} 
 		catch (ErrorReceivedFromINDS e) {
 			status = InDesignRequestResponseStatus.ERROR_FROM_INDS;
 			errorMessage = e.getMessage();
-			log(toStringInstance());
 		}
+		inDesignServerInstance.inFreeMode(mamFileID);
+		log(toStringInstance());
+		inDesignServerInstance = null;
 	}
 	
 	public void processErrorSendingRequestToINDSGettingNewINDS(String message) {
-		if(isFileRequest) {
+		if(isFileRequest && isNewServerAssigned) {
 			inDesignServerInstance.openFileList.remove(mamFileID);
 		}
 		status = InDesignRequestResponseStatus.ERROR_SENDING_TO_INDS_GETTING_NEW_INDS;
 		errorMessage = message;
+		inDesignServerInstance.inRetryMode(mamFileID);
 		log(toStringInstance());
+		inDesignServerInstance = null;
 	}
 	
 	public void processErrorInRequestProcessing(String message) {
@@ -186,18 +186,27 @@ public class InDesignRequestResponseInfo implements Serializable {
 		}
 		status = InDesignRequestResponseStatus.ERROR_IN_REQUEST_PROCESSING;
 		errorMessage = message;
+		responseData = errorResponseWhenRequestResponseCouldNotBeProcessed;
+		inDesignServerInstance.inRetryMode(mamFileID);
 		log(toStringInstance());
+		inDesignServerInstance = null;
 	}
 	
-	public void noINDSAvailableSendingErrorToWebserver() {
-		status = InDesignRequestResponseStatus.NO_INDS_AVAILABLE_SENDING_ERROR_TO_WEBSERVER;
-		log(toStringInstance());
-	}
 	
 	public void processINDSBusyResponseFromINDS(String message) {
 		status = InDesignRequestResponseStatus.SERVER_BUSY;
 		errorMessage = message;
+		responseData = errorResponseWhenINDSBusy;
+		inDesignServerInstance.inRetryMode(mamFileID);
 		log(toStringInstance());
+		inDesignServerInstance = null;
+	}
+	
+	public void processNoINDSAvailableResponse() {
+		status = InDesignRequestResponseStatus.NO_INDS_AVAILABLE_SENDING_ERROR_TO_WEBSERVER;
+		responseData = errorResponseWhenNoINDSIsAvailable;
+		log(toStringInstance());
+		inDesignServerInstance = null;
 	}
 	
 	public void sendingToWebserver() {
@@ -266,6 +275,23 @@ public class InDesignRequestResponseInfo implements Serializable {
 		}
 	}
 
+	protected void setErrorResponses() {
+
+		try {
+			errorResponseWhenNoINDSIsAvailable = FileUtils.readFileToString(new File("res/response/errorResponseWhenNoINDSIsAvailable.xml"), "UTF-8");
+		} catch (IOException e) {
+		}
+		
+		try {
+			errorResponseWhenRequestResponseCouldNotBeProcessed = FileUtils.readFileToString(new File("res/response/errorResponseWhenRequestResponseCouldNotBeProcessed.xml"), "UTF-8");
+		} catch (IOException e) {
+		}
+		
+		try {
+			errorResponseWhenINDSBusy = FileUtils.readFileToString(new File("res/response/errorResponseWhenINDSBusy.xml"), "UTF-8");
+		} catch (IOException e) {
+		}
+	}
 	protected void getInfoFromRequest(Document document) {
 
 		XPath xpath = XPathFactory.newInstance().newXPath();
