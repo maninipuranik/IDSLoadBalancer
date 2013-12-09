@@ -138,10 +138,6 @@ public class InDesignRequestResponseInfo implements Serializable {
 				openFilesFromResponse = getOpenFilesFromResponse(responseData);
 				if(openFilesFromResponse!=null) {
 					
-					if(openFilesFromResponse.size()==0) {
-						log("The response ->" + responseData);
-					}
-					
 					LinkedHashSet<String> extraFiles = new LinkedHashSet<String>();
 					extraFiles.addAll(openFilesFromResponse);
 					extraFiles.removeAll(inDesignServerInstance.openFileList);

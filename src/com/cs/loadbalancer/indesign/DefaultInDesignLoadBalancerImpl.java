@@ -72,7 +72,7 @@ public class DefaultInDesignLoadBalancerImpl
 				inDesignRequestResponseInfo.gotINDS(inDesignServerInstance, true);
 				//send the request to the specific InDesignServer
 				try {
-					sendRequestToInDesignServer(inDesignRequestResponseInfo);
+					sendRequestToINDS(inDesignRequestResponseInfo);
 					//If the sending/receiving of response was successful
 					freeUpAndProcessResponseFromINDS(inDesignRequestResponseInfo);
 				} 
@@ -103,30 +103,23 @@ public class DefaultInDesignLoadBalancerImpl
 		InDesignRequestResponseInfo inDesignRequestResponseInfo = new InDesignRequestResponseInfo();
 		inDesignRequestResponseInfo.receivedFromWebServer(requestData);
 		
-		return processSimpleXMLRequest(inDesignRequestResponseInfo);
+		String response = processSimpleXMLRequest(inDesignRequestResponseInfo);
+		inDesignRequestResponseInfo.sendingToWebserver();
 		
+		return response;
 	}
 	
 	public String processSimpleXMLRequest(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
 		
 		if(isAnyINDSIsAlive()) {
 			
-			//We should check if its a file request or a general request
-			//If its a file request, we should look for an appropriate server as this file could be locked on some server
-			if(inDesignRequestResponseInfo.isFileRequest()) {
-				//wait for appropriate INDS
-				assignInDesignServerBasedOnFile(inDesignRequestResponseInfo);
-			} 
-			//If its not a file request, we should simply send it to any available server
-			else {
-				//wait for any available INDS
-				assignAnyAvailableServer(inDesignRequestResponseInfo);
-			}
+			//Assign an INDS to this request
+			assignINDS(inDesignRequestResponseInfo);
 			
-			//send the request to the assigned InDesignServer
+			//send the request to the assigned INDS
 			try {
 				
-				sendRequestToInDesignServer(inDesignRequestResponseInfo);
+				sendRequestToINDS(inDesignRequestResponseInfo);
 				//If the sending/receiving of response was successful
 				freeUpAndProcessResponseFromINDS(inDesignRequestResponseInfo);
 				
@@ -162,12 +155,10 @@ public class DefaultInDesignLoadBalancerImpl
 	}
 	
 	
-	
-	
-	protected synchronized void assignInDesignServerBasedOnFile(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
+	protected synchronized void assignINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
 		
 		//Everytime this request thread gets in to the loop it should re-check for the appropriate INDS
-		while(!isAppropriateInDesignServerInstanceForThisFileAvailable(inDesignRequestResponseInfo)){
+		while(!isAppropriateINDSAvailable(inDesignRequestResponseInfo)){
 			
 			//while appropriate and available server is not found, wait
 			try {
@@ -178,10 +169,20 @@ public class DefaultInDesignLoadBalancerImpl
 			catch (InterruptedException e) {
 			}
 		}
-		assignINDS(inDesignRequestResponseInfo);
+				
+		removeThisINDSFromFreeServerList(inDesignRequestResponseInfo.getInDesignServerInstance());
+		addThisINDSToOccupiedServerList(inDesignRequestResponseInfo.getInDesignServerInstance());
+		try {
+			InDesignServerListLoader.marshal(allServerList, new File(serverListXmlPath));
+		} catch (Throwable e) {
+			loadBalancerLogger.debug("Error Saving ServerList to disk");
+			loadBalancerLogger.error(e);
+		}
+		checkINDSOpenFileListSanity();
 	}
+
 	
-	protected synchronized boolean isAppropriateInDesignServerInstanceForThisFileAvailable(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
+	protected synchronized boolean isAppropriateINDSAvailable(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
 		
 		// if the file is opened and corresponding server is available, set it and return true, so that the file can quickly use this server
 		InDesignServerInstance inDesignServerInstance = getINDSForThisFile(inDesignRequestResponseInfo.getMamFileID());
@@ -213,39 +214,8 @@ public class DefaultInDesignLoadBalancerImpl
 		
 	}
 	
-	protected synchronized void assignAnyAvailableServer(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
-		
-		while(!isAnyFreeINDSAvailable()) {
-			
-			try {
-				inDesignRequestResponseInfo.waitingForINDS();
-				this.wait();
-				inDesignRequestResponseInfo.notifiedForINDS();
-			} 
-			catch (InterruptedException e) {
-			}
-		}
-		InDesignServerInstance inDesignServerInstance = getFirstFreeINDS();
-		inDesignRequestResponseInfo.gotINDS(inDesignServerInstance, true);
-		assignINDS(inDesignRequestResponseInfo);
-		
-	}
 	
-	protected synchronized void assignINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
-		
-		removeThisINDSFromFreeServerList(inDesignRequestResponseInfo.getInDesignServerInstance());
-		addThisINDSToOccupiedServerList(inDesignRequestResponseInfo.getInDesignServerInstance());
-		try {
-			InDesignServerListLoader.marshal(allServerList, new File(serverListXmlPath));
-		} catch (Throwable e) {
-			loadBalancerLogger.debug("Error Saving ServerList to disk");
-			loadBalancerLogger.error(e);
-		}
-		checkINDSOpenFileListSanity();
-	}
-		
-	
-	protected void sendRequestToInDesignServer(InDesignRequestResponseInfo inDesignRequestResponseInfo) throws ConnectionException, ResponseTimeoutException, Throwable {
+	protected void sendRequestToINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo) throws ConnectionException, ResponseTimeoutException, Throwable {
 		
 		HTTPClient client = new HTTPClient();
 		inDesignRequestResponseInfo.sendingToINDS();
@@ -316,6 +286,7 @@ public class DefaultInDesignLoadBalancerImpl
 		this.notifyAll();
 	}
 	
+	/*This is kept for later in case we need to ever remove an INDS in the list
 	protected synchronized void removeUnavailableINDS(InDesignServerInstance inDesignServerInstance, Throwable e) {
 		
 		removeThisINDSFromOccupiedServerList(inDesignServerInstance);
@@ -323,6 +294,7 @@ public class DefaultInDesignLoadBalancerImpl
 		//reset its open file list, so that if load balancer crashes at any point, this is removed
 		inDesignServerInstance.openFileList = new LinkedHashSet<String>();
 	}
+	*/
 	
 	protected synchronized boolean isAnyINDSIsAlive() {
 		

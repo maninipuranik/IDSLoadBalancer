@@ -1,0 +1,986 @@
+2013-12-10 02:12:55 DEBUG openFilesLogger:15 - *************************Starting openFilesLogger************************
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[]]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:12:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:01 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:01 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:01 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:06 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:11 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:11 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:11 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:16 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:16 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:16 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:13:21 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:13:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:24 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:24 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:24 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:24 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:24 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:26 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:26 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:26 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:31 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:31 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:31 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:36 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:36 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:36 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:41 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:46 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:46 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:46 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:51 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:51 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:51 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:13:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:56 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:13:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:13:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:01 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:01 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:01 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:05 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:05 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:05 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:05 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:05 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:06 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:11 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:11 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:11 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:16 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:16 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:16 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:21 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:22 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:23 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:23 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:23 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:23 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:23 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:24 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:24 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:24 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:24 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:24 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:25 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:27 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:27 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[]]
+2013-12-10 02:14:27 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18387->[7356]]
+2013-12-10 02:14:27 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[7356]]
+2013-12-10 02:14:27 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:28 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:28 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:28 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:28 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:28 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:30 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:30 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:30 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:14:30 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:30 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:31 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:31 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:14:31 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:34 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:34 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:14:34 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:34 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:34 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:36 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:14:36 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:36 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:14:41 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:46 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:14:46 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:46 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:51 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:14:51 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:51 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:53 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:54 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:54 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:54 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:14:54 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:54 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:14:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:56 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:14:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:14:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:01 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:01 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:01 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:06 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:08 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:11 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:11 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:11 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:16 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:16 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:16 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:18 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:18 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:18 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:18 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:18 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:19 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:19 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:19 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:21 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:26 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:26 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:26 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:31 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:31 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:31 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:34 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:34 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:34 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:34 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:34 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:36 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:36 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:36 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:39 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:39 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:39 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:46 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:46 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:46 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:51 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:51 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:51 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:52 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:56 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:15:58 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:01 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:01 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:01 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:04 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:11 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:11 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:11 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:13 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:13 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:13 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:13 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:13 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:16 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:16 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:16 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:17 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:17 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:17 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:17 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:19 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:19 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:19 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:19 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:20 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:20 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:20 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:20 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:20 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:22 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:22 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:22 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:22 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:22 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:26 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:26 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:26 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:28 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:29 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:30 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:30 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:30 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:30 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:30 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:32 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:32 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:32 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:32 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:32 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:33 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:33 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[7356]]
+2013-12-10 02:16:33 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:33 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:33 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18385->[7356]]
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[7356], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18386->[], http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[], http://localhost:18387->[]]
+2013-12-10 02:16:34 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:37 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:39 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:40 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:42 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:46 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:46 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:46 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:51 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:51 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:51 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:16:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:16:56 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:16:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:16:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:01 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:01 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:01 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:02 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:02 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:02 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:02 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:02 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:03 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:05 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:05 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:05 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:05 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:05 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:07 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:08 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:11 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:11 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:11 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:16 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:16 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:16 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:21 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:26 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:26 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:26 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:31 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:31 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:31 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:36 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:36 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:36 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:36 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:41 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:41 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:41 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:41 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:46 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:46 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:46 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:46 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:51 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:51 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:51 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:51 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:17:56 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:17:56 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:17:56 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:17:56 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:01 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:18:01 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:18:01 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:18:01 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:06 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:18:06 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:18:06 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:18:06 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:11 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:18:11 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:18:11 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:18:11 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:16 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:18:16 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:18:16 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:18:16 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:21 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:18:21 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:18:21 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:18:21 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:26 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:18:26 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:18:26 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:18:26 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************
+2013-12-10 02:18:31 DEBUG openFilesLogger:15 - Free Servers ->[http://localhost:18387->[], http://localhost:18385->[], http://localhost:18386->[7356]]
+2013-12-10 02:18:31 DEBUG openFilesLogger:15 - Occupied Servers ->[]
+2013-12-10 02:18:31 DEBUG openFilesLogger:15 - All Servers ->[http://localhost:18385->[], http://localhost:18386->[7356], http://localhost:18387->[]]
+2013-12-10 02:18:31 DEBUG openFilesLogger:15 - *************************Starting checkINDSOpenFileListSanity************************

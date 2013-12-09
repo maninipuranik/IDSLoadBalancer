@@ -32,7 +32,13 @@ public class InDesignServerInstance implements Serializable, Comparable<InDesign
 		
 		status = InDesignServerInstanceStatus.IN_RETRY;
 		log(mamFileID);
-	}	
+	}
+	
+	public void allFilesClosed(String mamFileID) {
+		
+		status = InDesignServerInstanceStatus.IN_RETRY;
+		log(mamFileID);
+	}
 	
 	
 	public void log(String mamFileID) {
