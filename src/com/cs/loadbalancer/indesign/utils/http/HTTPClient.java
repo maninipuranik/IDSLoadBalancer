@@ -27,8 +27,8 @@ public class HTTPClient {
 		try {
 			
 			Builder builder = RequestConfig.custom();
-			builder.setConnectTimeout(5000);
-			builder.setSocketTimeout(5000);
+			builder.setConnectTimeout(60000);
+			builder.setSocketTimeout(180000);
 			RequestConfig requestConfig = builder.build();
 			
 			HttpPost httppost = new HttpPost(strURL);
