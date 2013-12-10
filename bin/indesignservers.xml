@@ -2,11 +2,15 @@
 <indesignServerInstanceList>
     <indesignServerInstance>
         <url>http://localhost:18385</url>
+        <openFileList>1968</openFileList>
+        <openFileList>7598</openFileList>
     </indesignServerInstance>
     <indesignServerInstance>
         <url>http://localhost:18386</url>
+        <openFileList>1457</openFileList>
     </indesignServerInstance>
     <indesignServerInstance>
         <url>http://localhost:18387</url>
+        <openFileList>7630</openFileList>
     </indesignServerInstance>
 </indesignServerInstanceList>

@@ -27,6 +27,7 @@ import com.cs.loadbalancer.indesign.utils.http.exception.ResponseTimeoutExceptio
 public class DefaultInDesignLoadBalancerImpl 
 	implements InDesignLoadBalancer 
 {
+	
 	private static DefaultLoggerImpl loadBalancerLogger = new DefaultLoggerImpl("loadBalancerLogger");
 	private static DefaultLoggerImpl idlkLogger = new DefaultLoggerImpl("idlkLogger");
 	private static DefaultLoggerImpl openFilesLogger = new DefaultLoggerImpl("openFilesLogger");
@@ -46,6 +47,7 @@ public class DefaultInDesignLoadBalancerImpl
 		allServerList = InDesignServerListLoader.unmarshal(new File(serverListXmlPath));
 		performTimedActivity();
 	}
+	
 	
 	public void performTimedActivity() {
 		
@@ -97,6 +99,7 @@ public class DefaultInDesignLoadBalancerImpl
 		checkINDSOpenFileListSanity();
 	}
 	
+	
 	@Override
 	public String processSimpleXMLRequest(String requestData) {
 		
@@ -108,6 +111,7 @@ public class DefaultInDesignLoadBalancerImpl
 		
 		return response;
 	}
+	
 	
 	public String processSimpleXMLRequest(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
 		
@@ -172,6 +176,7 @@ public class DefaultInDesignLoadBalancerImpl
 				
 		removeThisINDSFromFreeServerList(inDesignRequestResponseInfo.getInDesignServerInstance());
 		addThisINDSToOccupiedServerList(inDesignRequestResponseInfo.getInDesignServerInstance());
+		
 		try {
 			InDesignServerListLoader.marshal(allServerList, new File(serverListXmlPath));
 		} catch (Throwable e) {
@@ -245,12 +250,14 @@ public class DefaultInDesignLoadBalancerImpl
 		freeUpAssignedINDS(inDesignServerInstance);
 	}
 	
+	
 	protected synchronized void freeUpAndProcessErrorInRequestProcessing(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
 		
 		InDesignServerInstance inDesignServerInstance = inDesignRequestResponseInfo.getInDesignServerInstance();
 		inDesignRequestResponseInfo.processErrorInRequestProcessing(errorMessage);
 		freeUpAssignedINDS(inDesignServerInstance);
 	}
+	
 	
 	protected synchronized void dontFreeUpAndProcessINDSBusyResponseFromINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
 		
@@ -259,12 +266,14 @@ public class DefaultInDesignLoadBalancerImpl
 		addThisINDSToOccupiedServerListWithStatusRetry(inDesignServerInstance);
 	}
 	
+	
 	protected synchronized void dontFreeUpAndProcessErrorSendingRequestToINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
 		
 		InDesignServerInstance inDesignServerInstance = inDesignRequestResponseInfo.getInDesignServerInstance();
 		inDesignRequestResponseInfo.processErrorSendingRequestToINDSGettingNewINDS(errorMessage);
 		addThisINDSToOccupiedServerListWithStatusRetry(inDesignServerInstance);
 	}
+	
 	
 	protected synchronized void processNoINDSAvailable(InDesignRequestResponseInfo inDesignRequestResponseInfo) {
 		
@@ -307,6 +316,7 @@ public class DefaultInDesignLoadBalancerImpl
 		}
 	}
 	
+	
 	protected synchronized boolean isAnyFreeINDSAvailable() {
 		
 		if(freeServerList.size()==0) {
@@ -316,6 +326,7 @@ public class DefaultInDesignLoadBalancerImpl
 			return true;
 		}
 	}
+	
 	
 	protected synchronized boolean isThisINDSInInFreeOrOccupiedList(InDesignServerInstance inDesignServerInstance) {
 		
@@ -327,6 +338,7 @@ public class DefaultInDesignLoadBalancerImpl
 		}
 	}
 	
+	
 	protected synchronized void addThisINDSToFreeServerList(InDesignServerInstance inDesignServerInstance) {
 		
 		if(!freeServerList.contains(inDesignServerInstance)) {
@@ -337,6 +349,7 @@ public class DefaultInDesignLoadBalancerImpl
 		
 	}
 	
+	
 	protected synchronized void addThisINDSToOccupiedServerList(InDesignServerInstance inDesignServerInstance) {
 		
 		if(!occupiedInDesignServersList.contains(inDesignServerInstance)) {
@@ -345,6 +358,7 @@ public class DefaultInDesignLoadBalancerImpl
 		}
 		
 	}
+	
 	
 	protected synchronized void addThisINDSToOccupiedServerListWithStatusRetry(InDesignServerInstance inDesignServerInstance) {
 		
@@ -355,15 +369,18 @@ public class DefaultInDesignLoadBalancerImpl
 		
 	}
 	
+	
 	protected synchronized void removeThisINDSFromFreeServerList(InDesignServerInstance inDesignServerInstance) {
 		
 		freeServerList.remove(inDesignServerInstance);
 	}
 	
+	
 	protected synchronized void removeThisINDSFromOccupiedServerList(InDesignServerInstance inDesignServerInstance) {
 		
 		occupiedInDesignServersList.remove(inDesignServerInstance);
 	}
+	
 	
 	protected synchronized InDesignServerInstance getINDSForThisFile(String mamFileID) {
 		
@@ -377,6 +394,7 @@ public class DefaultInDesignLoadBalancerImpl
 		return null;
 	}
 	
+	
 	protected synchronized InDesignServerInstance getFirstFreeINDS() {
 		
 		if(isAnyFreeINDSAvailable()){
@@ -385,6 +403,7 @@ public class DefaultInDesignLoadBalancerImpl
 		return null;
 	}
 	
+	 
 	protected synchronized void checkINDSOpenFileListSanity() {
 		
 		openFilesLogger.debug("*************************Starting checkINDSOpenFileListSanity************************");
