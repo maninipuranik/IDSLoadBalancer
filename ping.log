@@ -1205,3 +1205,51 @@
 2013-12-10 19:36:57.231;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;GOT_INDS
 2013-12-10 19:36:57.231;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;SENDING_TO_INDS
 2013-12-10 19:36:57.236;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:02.227;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:02.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;GOT_INDS
+2013-12-10 19:37:02.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:02.234;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:02.234;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:02.299;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;GOT_INDS
+2013-12-10 19:37:02.299;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:02.304;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:07.226;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:07.226;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;GOT_INDS
+2013-12-10 19:37:07.226;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:07.233;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:07.233;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:07.233;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;GOT_INDS
+2013-12-10 19:37:07.233;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:07.238;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:12.227;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:12.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;GOT_INDS
+2013-12-10 19:37:12.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:12.233;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:12.233;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:12.233;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;GOT_INDS
+2013-12-10 19:37:12.233;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:12.238;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:17.227;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:17.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;GOT_INDS
+2013-12-10 19:37:17.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:17.231;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:17.231;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:17.231;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;GOT_INDS
+2013-12-10 19:37:17.231;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:17.235;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:22.227;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:22.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;GOT_INDS
+2013-12-10 19:37:22.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:22.231;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:22.231;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:22.231;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;GOT_INDS
+2013-12-10 19:37:22.231;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:22.236;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:27.227;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:27.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;GOT_INDS
+2013-12-10 19:37:27.227;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:27.245;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18385->[1968, 7598];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
+2013-12-10 19:37:27.245;pool-1-thread-1;!!!!0!!!!;null;null;null;null;null;PING_FROM_LOADBALANCER
+2013-12-10 19:37:27.245;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;GOT_INDS
+2013-12-10 19:37:27.245;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;SENDING_TO_INDS
+2013-12-10 19:37:27.307;pool-1-thread-1;!!!!0!!!!;null;http://localhost:18386->[1457];null;null;null;ERROR_SENDING_TO_INDS_GETTING_NEW_INDS
