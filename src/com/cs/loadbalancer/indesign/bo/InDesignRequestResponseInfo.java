@@ -44,7 +44,7 @@ public class InDesignRequestResponseInfo implements Serializable {
 	protected String mamFileID;
 	protected boolean isFileRequest;
 	protected InDesignServerInstance inDesignServerInstance;
-	protected boolean isNewServerAssigned;
+	protected boolean isNewServerAssigned = true;
 	protected boolean isPingRequest;
 	
 	//fields for logging
@@ -165,22 +165,31 @@ public class InDesignRequestResponseInfo implements Serializable {
 		inDesignServerInstance = null;
 	}
 	
-	public void processErrorSendingRequestToINDSGettingNewINDS(String message) {
-		if(isFileRequest && isNewServerAssigned) {
-			inDesignServerInstance.openFileList.remove(mamFileID);
-		}
-		status = InDesignRequestResponseStatus.ERROR_SENDING_TO_INDS_GETTING_NEW_INDS;
+	public void processErrorSendingRequestToINDS(String message) {
+		
+		status = InDesignRequestResponseStatus.ERROR_SENDING_REQUEST_TO_INDS;
 		errorMessage = message;
 		inDesignServerInstance.inRetryMode(mamFileID);
 		log(toStringInstance());
 		inDesignServerInstance = null;
 	}
 	
+	public void processPrepareForNewINDS() {
+		if(isFileRequest) {
+			inDesignServerInstance.openFileList.remove(mamFileID);
+		}
+		status = InDesignRequestResponseStatus.PREPARE_TO_GET_NEW_INDS;
+		errorMessage = null;
+		inDesignServerInstance = null;
+		responseData = null;
+		log(toStringInstance());
+	}
+	
 	public void processErrorInRequestProcessing(String message) {
 		if(isFileRequest) {
 			inDesignServerInstance.openFileList.remove(mamFileID);
 		}
-		status = InDesignRequestResponseStatus.ERROR_IN_REQUEST_PROCESSING;
+		status = InDesignRequestResponseStatus.ERROR_IN_REQUESTRESPONSE_PROCESSING;
 		errorMessage = message;
 		responseData = errorResponseWhenRequestResponseCouldNotBeProcessed;
 		inDesignServerInstance.inRetryMode(mamFileID);

@@ -84,7 +84,7 @@ public class DefaultInDesignLoadBalancerImpl
 						// Dont reset the open file list even if the server is down keep this server in the retry list
 						dontFreeUpAndProcessINDSBusyResponseFromINDS(inDesignRequestResponseInfo, e.getMessage());
 					}
-					else if (e instanceof ConnectionException && inDesignRequestResponseInfo.isNewServerAssigned()) {
+					else if (e instanceof ConnectionException) {
 						//internally free up this file from open file list
 						dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
 					} 
@@ -131,20 +131,28 @@ public class DefaultInDesignLoadBalancerImpl
 			catch (Throwable e) {
 				
 				loadBalancerLogger.error(e);
-				if(e instanceof ResponseTimeoutException) {
+				if (e instanceof ConnectionException) {
+					//internally free up this file from open file list
+					dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
+					
+					if(inDesignRequestResponseInfo.isNewServerAssigned()) {
+						//making a recursive call until...
+						try {
+							Thread.sleep(30000);
+						} catch (InterruptedException e1) {
+						}
+						inDesignRequestResponseInfo.processPrepareForNewINDS();
+						processSimpleXMLRequest(inDesignRequestResponseInfo);
+					}
+				} 
+				else if (e instanceof ConnectionException) {
+					//internally free up this file from open file list
+					dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
+				} 
+				else if(e instanceof ResponseTimeoutException) {
 					// Dont reset the open file list even if the server is down keep this server in the retry list
 					dontFreeUpAndProcessINDSBusyResponseFromINDS(inDesignRequestResponseInfo, e.getMessage());
 				}
-				else if (e instanceof ConnectionException && inDesignRequestResponseInfo.isNewServerAssigned()) {
-					//internally free up this file from open file list
-					dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
-					//making a recursive call until...
-					try {
-						Thread.sleep(30000);
-					} catch (InterruptedException e1) {
-					}
-					processSimpleXMLRequest(inDesignRequestResponseInfo);
-				} 
 				else {
 					freeUpAndProcessErrorInRequestProcessing(inDesignRequestResponseInfo, e.getMessage());
 				}
@@ -270,7 +278,7 @@ public class DefaultInDesignLoadBalancerImpl
 	protected synchronized void dontFreeUpAndProcessErrorSendingRequestToINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
 		
 		InDesignServerInstance inDesignServerInstance = inDesignRequestResponseInfo.getInDesignServerInstance();
-		inDesignRequestResponseInfo.processErrorSendingRequestToINDSGettingNewINDS(errorMessage);
+		inDesignRequestResponseInfo.processErrorSendingRequestToINDS(errorMessage);
 		addThisINDSToOccupiedServerListWithStatusRetry(inDesignServerInstance);
 	}
 	
