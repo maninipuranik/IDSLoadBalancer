@@ -12,6 +12,8 @@ public class InDesignServerInstance implements Serializable, Comparable<InDesign
 
 	public String url;
 	public String pathToAdmin;
+	public boolean isExportInstance;
+	
 	public transient InDesignServerInstanceStatus status = InDesignServerInstanceStatus.IN_RETRY;
 	public LinkedHashSet<String> openFileList = new LinkedHashSet<String>();
 	
@@ -41,11 +43,11 @@ public class InDesignServerInstance implements Serializable, Comparable<InDesign
 
 	@Override
 	public String toString() {
-		return url + "->" + openFileList.toString();
+		return url + "->" + isExportInstance+ "->" + openFileList.toString();
 	}
 	
 	public String toLogString() {
-		return url + "->" + status + "->" + openFileList.toString();
+		return url + "->" + status + "->" + isExportInstance+ "->" +  openFileList.toString();
 	}
 	
 	

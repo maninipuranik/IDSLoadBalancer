@@ -46,6 +46,7 @@ public class InDesignRequestResponseInfo implements Serializable {
 	protected InDesignServerInstance inDesignServerInstance;
 	protected boolean isNewServerAssigned = true;
 	protected boolean isPingRequest;
+	protected boolean isExportRequest;
 	
 	//fields for logging
 	protected String clientIP;
@@ -324,6 +325,10 @@ public class InDesignRequestResponseInfo implements Serializable {
 		} catch (Throwable e) {
 			// TODO Do Nothing
 		} 
+		
+		if(mamFileID.equals("547")) {
+			this.isExportRequest = true;
+		}
 
 		try {
 			expr = xpath.compile("//scriptArgs/name[text()='CurrentUserID'] ");
@@ -506,8 +511,8 @@ public class InDesignRequestResponseInfo implements Serializable {
 		builder.append("mamFileID");
 		builder.append(logSeparator);
 		builder.append("inDesignServerInstance");
-		//builder.append(logSeparator);
-		//builder.append("isNewServerAssigned");
+		builder.append(logSeparator);
+		builder.append("isExportRequest");
 		builder.append(logSeparator);
 		//builder.append("clientIP");
 		//builder.append(logSeparator);
@@ -541,8 +546,8 @@ public class InDesignRequestResponseInfo implements Serializable {
 		builder.append(mamFileID);
 		builder.append(logSeparator);
 		builder.append(inDesignServerInstance);
-		//builder.append(logSeparator);
-		//builder.append(isNewServerAssigned);
+		builder.append(logSeparator);
+		builder.append(isExportRequest);
 		builder.append(logSeparator);
 		//builder.append(clientIP);
 		//builder.append(logSeparator);
@@ -562,6 +567,10 @@ public class InDesignRequestResponseInfo implements Serializable {
 		builder.append(logSeparator);
 		builder.append(status);
 		return builder.toString();
+	}
+
+	public boolean isExportRequest() {
+		return this.isExportRequest;
 	}
 
 

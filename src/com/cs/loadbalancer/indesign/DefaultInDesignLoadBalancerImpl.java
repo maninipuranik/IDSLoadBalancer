@@ -214,9 +214,13 @@ public class DefaultInDesignLoadBalancerImpl
 		}
 		
 		else {
-			
-			// if the file is not opened and a server is available, set it and return true, so that the file can quickly use this server
-			inDesignServerInstance = getFirstFreeINDS();
+			if (inDesignRequestResponseInfo.isExportRequest()) {
+				// if the file is not opened and a server is available, set it and return true, so that the file can quickly use this server
+				inDesignServerInstance = getFirstFreeExportINDS();
+			} else { 
+				// if the file is not opened and a server is available, set it and return true, so that the file can quickly use this server
+				inDesignServerInstance = getFirstFreeINDS();
+			}
 			if(inDesignServerInstance!=null) {
 				inDesignRequestResponseInfo.gotINDS(inDesignServerInstance, true);
 				return true;
@@ -406,9 +410,28 @@ public class DefaultInDesignLoadBalancerImpl
 	
 	
 	protected synchronized InDesignServerInstance getFirstFreeINDS() {
-		
 		if(isAnyFreeINDSAvailable()){
-			return freeServerList.get(0);
+			Iterator<InDesignServerInstance> iterator = freeServerList.iterator();
+			while(iterator.hasNext()) {
+				InDesignServerInstance inDesignServerInstance = iterator.next();
+				if(!inDesignServerInstance.isExportInstance) {
+					return inDesignServerInstance;
+				}
+			}
+		}
+		return null;
+	}
+	
+	
+	protected synchronized InDesignServerInstance getFirstFreeExportINDS() {
+		if(isAnyFreeINDSAvailable()){
+			Iterator<InDesignServerInstance> iterator = freeServerList.iterator();
+			while(iterator.hasNext()) {
+				InDesignServerInstance inDesignServerInstance = iterator.next();
+				if(inDesignServerInstance.isExportInstance) {
+					return inDesignServerInstance;
+				}
+			}
 		}
 		return null;
 	}
