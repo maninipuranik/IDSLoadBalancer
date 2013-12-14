@@ -1,4 +1,4 @@
-time;thread;requestID;mamFileID;inDesignServerInstance;sessionContext;documentLockedlogSeparatoropenFilesFromResponse;status
+time;thread;requestID;mamFileID;inDesignServerInstance;sessionContext;documentLocked;openFilesFromResponse;status
 2013-12-10 19:15:34.995;pool-2-thread-1;!!!!1!!!!;7356;null;;;null;RECEIVED_FROM_WEBSERVER
 2013-12-10 19:15:34.995;pool-2-thread-1;!!!!1!!!!;7356;http://localhost:18386->[7356];;;null;GOT_INDS
 2013-12-10 19:15:35.002;pool-2-thread-1;!!!!1!!!!;7356;http://localhost:18386->[7356];;;null;SENDING_TO_INDS

@@ -518,7 +518,7 @@ public class InDesignRequestResponseInfo implements Serializable {
 		builder.append("processID");
 		builder.append(logSeparator);*/
 		builder.append("documentLocked");
-		builder.append("logSeparator");
+		builder.append(logSeparator);
 		/*builder.append("requestData");
 		builder.append(logSeparator);
 		builder.append("responseData");

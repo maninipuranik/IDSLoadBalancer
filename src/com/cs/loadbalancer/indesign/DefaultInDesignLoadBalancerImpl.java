@@ -131,6 +131,8 @@ public class DefaultInDesignLoadBalancerImpl
 			catch (Throwable e) {
 				
 				loadBalancerLogger.error(e);
+				
+				//TODO should we really do this?
 				if (e instanceof ConnectionException) {
 					//internally free up this file from open file list
 					dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());

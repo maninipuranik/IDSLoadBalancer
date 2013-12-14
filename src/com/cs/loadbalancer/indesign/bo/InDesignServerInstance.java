@@ -8,7 +8,7 @@ import com.cs.loadbalancer.indesign.helpers.DefaultLoggerImpl;
 public class InDesignServerInstance implements Serializable, Comparable<InDesignServerInstance> {
 
 	private static final long serialVersionUID = 1L;
-	private static DefaultLoggerImpl indsLogger = new DefaultLoggerImpl("indsLogger");
+	private static DefaultLoggerImpl indsLogger = new DefaultLoggerImpl("indsAlive");
 
 	public String url;
 	public String pathToAdmin;
