@@ -326,10 +326,27 @@ public class InDesignRequestResponseInfo implements Serializable {
 			// TODO Do Nothing
 		} 
 		
-		if(mamFileID.equals("547")) {
-			this.isExportRequest = true;
-		}
-
+		// Check for Export Request and set isExportRequest to TRUE if found
+		try {
+			expr = xpath.compile("//scriptArgs/name[text()='script1'] ");
+			result = expr.evaluate(document, XPathConstants.NODESET);
+			nodes = (NodeList) result;
+			if(nodes!=null && nodes.item(0)!=null){
+				Node valueTag = nodes.item(0).getNextSibling();
+				if(
+						valueTag.getTextContent().contains("getPackage.jsx") 
+						|| 
+						valueTag.getTextContent().contains("getPdf.jsx") 
+						|| 
+						valueTag.getTextContent().contains("ExportJpg")
+				) {
+					this.isExportRequest = true;
+				}
+			}
+		} catch (Throwable e) {
+			// TODO Do Nothing
+		} 
+		
 		try {
 			expr = xpath.compile("//scriptArgs/name[text()='CurrentUserID'] ");
 			result = expr.evaluate(document, XPathConstants.NODESET);
