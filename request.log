@@ -1,8 +1,0 @@
-time;thread;requestID;mamFileID;inDesignServerInstance;isExportRequest;sessionContext;documentLocked;openFilesFromResponse;status
-time;thread;requestID;mamFileID;inDesignServerInstance;isExportRequest;sessionContext;documentLocked;openFilesFromResponse;status
-2013-12-14 15:15:00.846;pool-2-thread-1;!!!!1!!!!;547;null;true;;;null;RECEIVED_FROM_WEBSERVER
-2013-12-14 15:15:00.847;pool-2-thread-1;!!!!1!!!!;547;http://localhost:18386->true->[, 547];true;;;null;GOT_INDS
-2013-12-14 15:15:00.854;pool-2-thread-1;!!!!1!!!!;547;http://localhost:18386->true->[, 547];true;;;null;SENDING_TO_INDS
-2013-12-14 15:15:01.174;pool-2-thread-1;!!!!1!!!!;547;http://localhost:18386->true->[, 547];true;;;null;RECEIVED_FROM_INDS
-2013-12-14 15:15:01.175;pool-2-thread-1;!!!!1!!!!;547;http://localhost:18386->true->[, 547];true;;;null;ERROR_FROM_INDS
-2013-12-14 15:15:01.191;pool-2-thread-1;!!!!1!!!!;547;null;true;;;null;SENT_TO_WEBSERVER
