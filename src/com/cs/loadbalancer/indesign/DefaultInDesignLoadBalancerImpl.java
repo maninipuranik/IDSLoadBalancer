@@ -177,7 +177,7 @@ public class DefaultInDesignLoadBalancerImpl
 			//while appropriate and available server is not found, wait
 			try {
 				inDesignRequestResponseInfo.waitingForINDS();
-				this.wait();
+				this.wait(60000);
 				inDesignRequestResponseInfo.notifiedForINDS();
 			} 
 			catch (InterruptedException e) {
