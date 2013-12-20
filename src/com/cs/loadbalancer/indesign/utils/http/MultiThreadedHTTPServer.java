@@ -19,25 +19,32 @@ import com.cs.loadbalancer.indesign.utils.http.execptions.ServerNotStartedExcept
 
 public class MultiThreadedHTTPServer implements Container {
 
+	
+	protected static final String DEFAULT_HOST = "0.0.0.0";
+	protected static final int DEFAULT_PORT = 8888;
+	protected static final int DEFAULT_THREAD_POOL_SIZE = 10;
 	protected Server server = null;
 	protected Connection connection = null;
 	protected InetSocketAddress address = null;
 	protected HTTPRequestProcessor httpRequestProcessor = null;
+	protected Executor executor = null;
+	protected String host;
+	protected int port;
+	private int threadPoolSize;
 
-	public MultiThreadedHTTPServer(String hostName, int port,
-			int threadPoolSize, HTTPRequestProcessor httpRequestProcessor) {
+	public MultiThreadedHTTPServer(String host, String port,
+									String threadPoolSize, 
+									HTTPRequestProcessor httpRequestProcessor) {
 
+		validateAndSetHostAndPort(host, port);
+		validateAndSetThreadPoolSize(threadPoolSize);
+		
 		try {
-			executor = Executors.newFixedThreadPool(threadPoolSize);
+			executor = Executors.newFixedThreadPool(this.threadPoolSize);
 			this.httpRequestProcessor = httpRequestProcessor;
 			this.server = new ContainerServer(this);
 			this.connection = new SocketConnection(server);
-			if(hostName== null) {
-				this.address = new InetSocketAddress(port);
-			}
-			else {
-				this.address = new InetSocketAddress(hostName, port);
-			}
+			this.address = new InetSocketAddress(this.host, this.port);
 			
 		} catch (Throwable e) {
 			throw new ServerNotConfiguredException(e);
@@ -49,7 +56,7 @@ public class MultiThreadedHTTPServer implements Container {
 
 		try {
 			connection.connect(address);
-			System.out.println("MultiThreadedHTTPServer started at " + address.getHostName() + ":" + address.getPort());
+			System.out.println("MultiThreadedHTTPServer started at " + address.getHostName() + ":" + address.getPort() + " with the thread pool of " + threadPoolSize);
 		} catch (IOException e) {
 			throw new ServerNotStartedException(e);
 		}
@@ -102,20 +109,56 @@ public class MultiThreadedHTTPServer implements Container {
 			}
 		}
 	}
+	
+	protected void validateAndSetHostAndPort(String host, String port) {
+		
+		//utility function, picked up from net to check the validity of the host and port combo
+		if(host==null) {
+			System.out.println("No host (option: -h), provided, using default "+DEFAULT_HOST);
+			this.host = DEFAULT_HOST;
+		} else {
+			this.host = host;
+		}
+		if(port==null) {
+			System.out.println("No port (option: -p), provided, using default "+DEFAULT_PORT);
+			this.port = DEFAULT_PORT;
+		} 
+		else {
+			try {
+				int portNo = Integer.parseInt(port);
+				if(portNo>0) {
+					this.port = portNo;
+				} else {
+					System.out.println("Invalid port, using default "+DEFAULT_PORT);
+					this.port = DEFAULT_PORT;
+				}
+			} catch (NumberFormatException e) {
+				System.out.println("Invalid port, using default "+DEFAULT_PORT);
+				this.port = DEFAULT_PORT;
+			}
+		}
+	}
+	
+	protected void validateAndSetThreadPoolSize(String threadPoolSize) {
 
-	private final Executor executor;
-
-	/*
-	 * static class ShutdownHook extends Thread { public void run() { try {
-	 * connection.close(); } catch (IOException e) { // TODO Auto-generated
-	 * catch block e.printStackTrace(); } }
-	 * 
-	 * public static void main(String[] list) throws Throwable {
-	 * 
-	 * Runtime.getRuntime().addShutdownHook(new ShutdownHook()); container = new
-	 * MultiThreadedHTTPServer(10); server = new ContainerServer(container);
-	 * 
-	 * } }
-	 */
+		if(threadPoolSize==null) {
+			System.out.println("No thread pool size (option: -t), provided, using default "+DEFAULT_THREAD_POOL_SIZE);
+			this.threadPoolSize = DEFAULT_THREAD_POOL_SIZE;
+		} else {
+			
+			try {
+				int size = Integer.parseInt(threadPoolSize);
+				if(size>0) {
+					this.threadPoolSize = size;
+				} else {
+					System.out.println("Invalid thread pool size, using default "+DEFAULT_THREAD_POOL_SIZE);
+					this.threadPoolSize = DEFAULT_THREAD_POOL_SIZE;
+				}
+			} catch (NumberFormatException e) {
+				System.out.println("Invalid thread pool size, using default "+DEFAULT_THREAD_POOL_SIZE);
+				this.threadPoolSize = DEFAULT_THREAD_POOL_SIZE;
+			}
+	    }
+	}
 
 }
