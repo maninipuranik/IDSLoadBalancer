@@ -81,11 +81,9 @@ public class DefaultInDesignLoadBalancerImpl
 				catch (Throwable e) {
 					loadBalancerLogger.error(e);
 					if(e instanceof ResponseTimeoutException) {
-						// Dont reset the open file list even if the server is down keep this server in the retry list
 						dontFreeUpAndProcessINDSBusyResponseFromINDS(inDesignRequestResponseInfo, e.getMessage());
 					}
 					else if (e instanceof ConnectionException) {
-						//internally free up this file from open file list
 						dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
 					} 
 					else {
@@ -133,7 +131,7 @@ public class DefaultInDesignLoadBalancerImpl
 				loadBalancerLogger.error(e);
 				
 				//TODO should we really do this?
-				if (e instanceof ConnectionException) {
+				/*if (e instanceof ConnectionException) {
 					//internally free up this file from open file list
 					dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
 					
@@ -147,14 +145,13 @@ public class DefaultInDesignLoadBalancerImpl
 						processSimpleXMLRequest(inDesignRequestResponseInfo);
 					}
 				} 
-				else if (e instanceof ConnectionException) {
-					//internally free up this file from open file list
-					dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
-				} 
-				else if(e instanceof ResponseTimeoutException) {
-					// Dont reset the open file list even if the server is down keep this server in the retry list
+				else */
+				if(e instanceof ResponseTimeoutException) {
 					dontFreeUpAndProcessINDSBusyResponseFromINDS(inDesignRequestResponseInfo, e.getMessage());
 				}
+				else if (e instanceof ConnectionException) {
+					dontFreeUpAndProcessErrorSendingRequestToINDS(inDesignRequestResponseInfo, e.getMessage());
+				} 
 				else {
 					freeUpAndProcessErrorInRequestProcessing(inDesignRequestResponseInfo, e.getMessage());
 				}
@@ -284,7 +281,7 @@ public class DefaultInDesignLoadBalancerImpl
 	protected synchronized void dontFreeUpAndProcessErrorSendingRequestToINDS(InDesignRequestResponseInfo inDesignRequestResponseInfo, String errorMessage) {
 		
 		InDesignServerInstance inDesignServerInstance = inDesignRequestResponseInfo.getInDesignServerInstance();
-		inDesignRequestResponseInfo.processErrorSendingRequestToINDS(errorMessage);
+		inDesignRequestResponseInfo.processErrorInRequestProcessing(errorMessage);
 		addThisINDSToOccupiedServerListWithStatusRetry(inDesignServerInstance);
 	}
 	

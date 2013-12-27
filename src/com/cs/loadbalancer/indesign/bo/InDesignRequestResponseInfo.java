@@ -166,7 +166,7 @@ public class InDesignRequestResponseInfo implements Serializable {
 		inDesignServerInstance = null;
 	}
 	
-	public void processErrorSendingRequestToINDS(String message) {
+	/*public void processErrorSendingRequestToINDS(String message) {
 		
 		status = InDesignRequestResponseStatus.ERROR_SENDING_REQUEST_TO_INDS;
 		errorMessage = message;
@@ -184,12 +184,12 @@ public class InDesignRequestResponseInfo implements Serializable {
 		inDesignServerInstance = null;
 		responseData = null;
 		log(toStringInstance());
-	}
+	}*/
 	
 	public void processErrorInRequestProcessing(String message) {
-		if(isFileRequest) {
+		/*if(isFileRequest) {
 			inDesignServerInstance.openFileList.remove(mamFileID);
-		}
+		}*/
 		status = InDesignRequestResponseStatus.ERROR_IN_REQUESTRESPONSE_PROCESSING;
 		errorMessage = message;
 		responseData = errorResponseWhenRequestResponseCouldNotBeProcessed;
