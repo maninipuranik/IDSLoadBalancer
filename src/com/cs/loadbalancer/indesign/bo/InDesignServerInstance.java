@@ -13,6 +13,7 @@ public class InDesignServerInstance implements Serializable, Comparable<InDesign
 	public String url;
 	public String pathToAdmin;
 	public boolean isExportInstance;
+	public int timeOut = 60000;
 	
 	public transient InDesignServerInstanceStatus status = InDesignServerInstanceStatus.IN_RETRY;
 	protected LinkedHashSet<String> openFileList = new LinkedHashSet<String>();

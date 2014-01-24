@@ -21,14 +21,14 @@ import com.cs.loadbalancer.indesign.utils.http.exception.ResponseTimeoutExceptio
 
 public class HTTPClient {
 
-	public String sendAndReceiveXML(String strURL, String requestXML) throws Throwable{
+	public String sendAndReceiveXML(String strURL, String requestXML, int requestTimeOut) throws Throwable{
 
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		try {
 			
 			Builder builder = RequestConfig.custom();
-			builder.setConnectTimeout(60000);
-			builder.setSocketTimeout(180000);
+			builder.setConnectTimeout(requestTimeOut);
+			builder.setSocketTimeout(requestTimeOut);
 			RequestConfig requestConfig = builder.build();
 			
 			HttpPost httppost = new HttpPost(strURL);

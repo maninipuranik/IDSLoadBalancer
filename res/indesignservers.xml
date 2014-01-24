@@ -3,13 +3,16 @@
     <indesignServerInstance>
         <url>http://localhost:18385</url>
         <isExportInstance>false</isExportInstance>
+        <timeOut>180000</timeOut>
     </indesignServerInstance>
     <indesignServerInstance>
         <url>http://localhost:18386</url>
         <isExportInstance>true</isExportInstance>
+        <timeOut>60000</timeOut>
     </indesignServerInstance>
     <indesignServerInstance>
         <url>http://localhost:18387</url>
         <isExportInstance>false</isExportInstance>
+        <timeOut>180000</timeOut>
     </indesignServerInstance>
 </indesignServerInstanceList>

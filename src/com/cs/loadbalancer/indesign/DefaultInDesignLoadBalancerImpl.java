@@ -237,7 +237,7 @@ public class DefaultInDesignLoadBalancerImpl
 		inDesignRequestResponseInfo.sendingToINDS();
 		String responseData = null;
 		try {
-			responseData = client.sendAndReceiveXML(inDesignRequestResponseInfo.getInDesignServerInstance().url, inDesignRequestResponseInfo.getRequestData());
+			responseData = client.sendAndReceiveXML(inDesignRequestResponseInfo.getInDesignServerInstance().url, inDesignRequestResponseInfo.getRequestData(), inDesignRequestResponseInfo.getInDesignServerInstance().timeOut);
 		} 
 		catch (Throwable e) {
 			if(e instanceof ConnectionException) {
