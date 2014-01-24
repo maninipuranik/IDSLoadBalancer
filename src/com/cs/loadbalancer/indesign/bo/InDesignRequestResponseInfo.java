@@ -60,7 +60,6 @@ public class InDesignRequestResponseInfo implements Serializable {
 	protected String responseData;
 	protected String errorMessage;
 	
-	protected LinkedHashSet<String> openFilesFromResponse;
 	protected InDesignRequestResponseStatus status = InDesignRequestResponseStatus.RECEIVED_FROM_WEBSERVER;
 	
 	protected String errorResponseWhenNoINDSIsAvailable = "";
@@ -136,7 +135,7 @@ public class InDesignRequestResponseInfo implements Serializable {
 			
 			if(isFileRequest) {
 			
-				openFilesFromResponse = getOpenFilesFromResponse(responseData);
+				LinkedHashSet<String> openFilesFromResponse = getOpenFilesFromResponse(responseData);
 				if(openFilesFromResponse!=null) {
 					
 					LinkedHashSet<String> extraFiles = new LinkedHashSet<String>();
@@ -264,12 +263,6 @@ public class InDesignRequestResponseInfo implements Serializable {
 		return isNewServerAssigned;
 	}
 
-	/**
-	 * @return the openFilesFromResponse
-	 */
-	public LinkedHashSet<String> getOpenFilesFromResponse() {
-		return openFilesFromResponse;
-	}
 	
 	protected void log(String log) {
 		
@@ -544,9 +537,9 @@ public class InDesignRequestResponseInfo implements Serializable {
 		/*builder.append("requestData");
 		builder.append(logSeparator);
 		builder.append("responseData");
-		builder.append(logSeparator);*/
-		builder.append("openFilesFromResponse");
 		builder.append(logSeparator);
+		builder.append("openFilesFromResponse");
+		builder.append(logSeparator);*/
 		builder.append("status");
 		return builder.toString();
 	}
@@ -579,9 +572,9 @@ public class InDesignRequestResponseInfo implements Serializable {
 		/*builder.append(requestData);
 		builder.append(logSeparator);
 		builder.append(responseData);
-		builder.append(logSeparator);*/
-		builder.append(openFilesFromResponse);
 		builder.append(logSeparator);
+		builder.append(openFilesFromResponse);
+		builder.append(logSeparator);*/
 		builder.append(status);
 		return builder.toString();
 	}

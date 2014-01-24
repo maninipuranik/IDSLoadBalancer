@@ -15,9 +15,25 @@ public class InDesignServerInstance implements Serializable, Comparable<InDesign
 	public boolean isExportInstance;
 	
 	public transient InDesignServerInstanceStatus status = InDesignServerInstanceStatus.IN_RETRY;
-	public LinkedHashSet<String> openFileList = new LinkedHashSet<String>();
+	protected LinkedHashSet<String> openFileList = new LinkedHashSet<String>();
 	
 
+	public synchronized boolean hasThisFileOpen(String mamFileID) {
+		
+		return openFileList.contains(mamFileID);
+	}
+	
+	public synchronized void setOpenFileList(LinkedHashSet<String> openFileList) {
+		
+		this.openFileList = openFileList;
+	}
+	
+	public synchronized LinkedHashSet<String> getOpenFileListSnapshot() {
+		
+		LinkedHashSet<String> snapShot = new LinkedHashSet<String>(openFileList);
+		return snapShot;
+	}
+	
 	public void inFreeMode(String mamFileID) {
 		
 		status = InDesignServerInstanceStatus.FREE;
@@ -43,11 +59,11 @@ public class InDesignServerInstance implements Serializable, Comparable<InDesign
 
 	@Override
 	public String toString() {
-		return url + "->" + isExportInstance+ "->" + openFileList.toString();
+		return url + "->" + isExportInstance+ "->" + getOpenFileListSnapshot().toString();
 	}
 	
 	public String toLogString() {
-		return url + "->" + status + "->" + isExportInstance+ "->" +  openFileList.toString();
+		return url + "->" + status + "->" + isExportInstance+ "->" +  getOpenFileListSnapshot().toString();
 	}
 	
 	

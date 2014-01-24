@@ -398,7 +398,7 @@ public class DefaultInDesignLoadBalancerImpl
 		Iterator<InDesignServerInstance> iterator = allServerList.iterator();
 		while(iterator.hasNext()) {
 			InDesignServerInstance inDesignServerInstance = iterator.next();
-			if(inDesignServerInstance.openFileList.contains(mamFileID)) {
+			if(inDesignServerInstance.hasThisFileOpen(mamFileID)) {
 				return inDesignServerInstance;
 			}
 		}
@@ -450,8 +450,8 @@ public class DefaultInDesignLoadBalancerImpl
 				InDesignServerInstance inDesignServerInstanceTo = iterator2.next();
 				if(!inDesignServerInstanceFrom.url.equals(inDesignServerInstanceTo.url)) {
 					LinkedHashSet<String> commonFiles = new LinkedHashSet<String>();
-					commonFiles.addAll(inDesignServerInstanceFrom.openFileList);
-					commonFiles.retainAll(inDesignServerInstanceTo.openFileList);
+					commonFiles.addAll(inDesignServerInstanceFrom.getOpenFileListSnapshot());
+					commonFiles.retainAll(inDesignServerInstanceTo.getOpenFileListSnapshot());
 					
 					if(commonFiles.size()>0) {
 						idlkLogger.debug("!!!!!!!!!!!!!!!!Shit Starts!!!!!!!!!!!!!!!!");

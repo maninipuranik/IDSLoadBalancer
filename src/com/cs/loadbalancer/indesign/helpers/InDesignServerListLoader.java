@@ -48,7 +48,7 @@ public class InDesignServerListLoader {
 		openFileList1.add("14");
 		openFileList1.add("15");
 		inDesignServerInstance1.url = "http://localhost:18385";
-		inDesignServerInstance1.openFileList = openFileList1;
+		inDesignServerInstance1.setOpenFileList(openFileList1);
 		inDesignServerInstanceList.add(inDesignServerInstance1);
 
 		InDesignServerInstance inDesignServerInstance2 = new InDesignServerInstance();
@@ -59,7 +59,7 @@ public class InDesignServerListLoader {
 		openFileList2.add("24");
 		openFileList2.add("25");
 		inDesignServerInstance2.url = "http://localhost:18386";
-		inDesignServerInstance2.openFileList = openFileList2;
+		inDesignServerInstance2.setOpenFileList(openFileList2);
 		inDesignServerInstanceList.add(inDesignServerInstance2);
 
 		InDesignServerInstance inDesignServerInstance3 = new InDesignServerInstance();
@@ -70,7 +70,7 @@ public class InDesignServerListLoader {
 		openFileList3.add("34");
 		openFileList3.add("35");
 		inDesignServerInstance3.url = "http://localhost:18387";
-		inDesignServerInstance3.openFileList = openFileList3;
+		inDesignServerInstance3.setOpenFileList(openFileList3);
 		inDesignServerInstanceList.add(inDesignServerInstance3);
 
 		InDesignServerInstance inDesignServerInstance4 = new InDesignServerInstance();
@@ -81,7 +81,7 @@ public class InDesignServerListLoader {
 		openFileList4.add("44");
 		openFileList4.add("45");
 		inDesignServerInstance4.url = "http://localhost:18388";
-		inDesignServerInstance4.openFileList = openFileList4;
+		inDesignServerInstance4.setOpenFileList(openFileList4);
 		inDesignServerInstanceList.add(inDesignServerInstance4);
 
 		InDesignServerInstance inDesignServerInstance5 = new InDesignServerInstance();
@@ -92,7 +92,7 @@ public class InDesignServerListLoader {
 		openFileList5.add("54");
 		openFileList5.add("55");
 		inDesignServerInstance5.url = "http://localhost:18389";
-		inDesignServerInstance5.openFileList = openFileList5;
+		inDesignServerInstance5.setOpenFileList(openFileList5);
 		inDesignServerInstanceList.add(inDesignServerInstance5);
 
 		marshal(inDesignServerInstanceList, new File("res/indesignservers.xml"));
