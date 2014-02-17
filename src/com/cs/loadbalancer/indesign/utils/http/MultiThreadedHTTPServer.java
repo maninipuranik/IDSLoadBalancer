@@ -14,11 +14,13 @@ import org.simpleframework.transport.Server;
 import org.simpleframework.transport.connect.Connection;
 import org.simpleframework.transport.connect.SocketConnection;
 
+import com.cs.loadbalancer.indesign.helpers.DefaultLoggerImpl;
 import com.cs.loadbalancer.indesign.utils.http.execptions.ServerNotConfiguredException;
 import com.cs.loadbalancer.indesign.utils.http.execptions.ServerNotStartedException;
 
 public class MultiThreadedHTTPServer implements Container {
 
+	private static DefaultLoggerImpl httpServerLogger = new DefaultLoggerImpl("httpServerLogger");
 	
 	protected static final String DEFAULT_HOST = "0.0.0.0";
 	protected static final int DEFAULT_PORT = 8888;
@@ -47,6 +49,7 @@ public class MultiThreadedHTTPServer implements Container {
 			this.address = new InetSocketAddress(this.host, this.port);
 			
 		} catch (Throwable e) {
+			httpServerLogger.error(e);
 			throw new ServerNotConfiguredException(e);
 		}
 
@@ -58,6 +61,7 @@ public class MultiThreadedHTTPServer implements Container {
 			connection.connect(address);
 			System.out.println("MultiThreadedHTTPServer started at " + address.getHostName() + ":" + address.getPort() + " with the thread pool of " + threadPoolSize);
 		} catch (IOException e) {
+			httpServerLogger.error(e);
 			throw new ServerNotStartedException(e);
 		}
 	}
@@ -67,6 +71,7 @@ public class MultiThreadedHTTPServer implements Container {
 		try {
 			connection.close();
 		} catch (IOException e) {
+			httpServerLogger.error(e);
 			throw new ServerNotStartedException(e);
 		}
 	}
@@ -104,8 +109,7 @@ public class MultiThreadedHTTPServer implements Container {
 
 			} catch (Exception e) {
 				
-				//TODO reinitialize!!!
-				e.printStackTrace();
+				httpServerLogger.error(e);
 			}
 		}
 	}

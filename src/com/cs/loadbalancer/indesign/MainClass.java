@@ -61,7 +61,11 @@ public class MainClass {
 
 	static class ShutdownHook extends Thread {
 		public void run() {
-			multiThreadedHTTPServer.stopServer();
+			try {
+				multiThreadedHTTPServer.stopServer();
+			} catch (Throwable e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
